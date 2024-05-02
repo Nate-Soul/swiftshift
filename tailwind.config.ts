@@ -23,6 +23,7 @@ const config: Config = {
         "secondary-500": "#0D1717",
         "light-50": "#FFFBF3",
         "light-100": "#FDFEFA",
+        "light-200": "#BDBDBD",
         "light-300": "#FFB48B",
         "light-400": "#DEBC82",
         "dark-300": "#8C7424",
