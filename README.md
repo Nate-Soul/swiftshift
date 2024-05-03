@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SwiftShift - The Relocation Revolution
 
-## Getting Started
+## About the Project
 
-First, run the development server:
+The task was to create a comprehensive online platform designed to revolutionize the relocation experience for both households and offices. Moving to a new place often comes with a myriad of challenges, from finding the right parking spaces to efficiently moving furniture. The platform aims to simplify and streamline the entire relocation process, ensuring a stress-free and organized transition.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Problem Statement
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Industry:** Moving & Relocation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Individuals and families who wish to relocate often grapple with logistical challenges, lack of reliable information, and difficulty coordinating various aspects such as packing, transportation, and settling into a new environment.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Credits
 
-## Learn More
+This project was conceived by 2 talented UI/UX designers who brought the initial designs to life using Figma. As a developer, I saw the potential of this project and sought their permission to convert the designs into a live website, which they graciously agreed to. I want to extend my heartfelt thanks to [Glory Richard](https://www.behance.net/misseshiet) and [Victory Eshiet](https://www.behance.net/victorybassey10) for their vision and collaboration in making this project a reality.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Frontend: HTML5, Tailwind CSS, React.js, Next.js
+- Backend: N/A
+- Database: N/A
+- Design Tools: Figma
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+N/A Yet
