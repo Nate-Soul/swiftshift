@@ -31,8 +31,9 @@ const ServicesSection = () => {
     ]
 
   return (
-    <section className="py-16 bg-dark-300 bg-opacity-60 text-white">
-        <div className="container">
+    <section className="py-16 text-white relative bg-[url(/media/images/gallery/guilherme-almeida.png)] bg-no-repeat bg-center bg-contain">
+        <div className="absolute top-0 left-0 bottom-0 right-0 bg-dark-300 bg-opacity-60"></div>
+        <div className="container relative">
             <header className="flex flex-col gap-y-6 md:gap-y-8 mb-12">
                 <span className="section-heading-badge uppercase bg-light-300 text-light-50 text-sm w-max rounded-lg p-1">
                     What You Gain
