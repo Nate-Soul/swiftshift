@@ -2,8 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.horizontal-scroll {
+  @apply flex flex-nowrap overflow-x-auto scroll-smooth;
+}
+
+.hide-scrollbar{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  @apply w-0 h-0 hidden;
+}
+
 .btn {
-  @apply rounded-full inline-flex justify-center items-center gap-x-2;
+  @apply rounded-full inline-flex justify-center items-center gap-x-2 transition-colors duration-500;
 }
 
 .btn-primary {

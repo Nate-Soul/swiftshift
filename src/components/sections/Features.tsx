@@ -10,8 +10,8 @@ const Features = () => {
                 <Image src="/media/images/gallery/pexels-shvets-production.jpg" alt="SwiftShift's workers packing an office space" height={403} width={737} className="rounded-xl" priority/>
             </div>
             <div className="flex flex-col gap-y-6 justify-center sm:justify-start items-center sm:items-start text-center sm:text-left pl-0 sm:pl-3 md:pl-5 pr-0 sm:pr-4 md:pr-8 lg:pr-16">
-                <h4 className="text-3xl lg:text-5xl font-extrabold leading-normal lg:leading-relaxed text-dark-500 capitalize">Need Help Moving?</h4>
-                <p className="text-lg leading-6 text-dark-500">
+                <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-extrabold leading-normal lg:leading-relaxed text-dark-500 capitalize">Need Help Moving?</h4>
+                <p className="sm:text-[1rem] md:text-lg leading-6 text-dark-500">
                     We have the right solutions to make your relocation stress-free
                 </p>
                 <div className="flex items-center gap-x-5">
@@ -30,8 +30,8 @@ const Features = () => {
                 </div> */}
             </div>
             <div className="flex flex-col gap-y-6 justify-center sm:justify-start items-center sm:items-start text-center sm:text-left pl-0 sm:pl-3 md:pl-5 pr-0 sm:pr-4 md:pr-8 lg:pr-16">
-                <h4 className="text-3xl lg:text-5xl font-extrabold leading-normal lg:leading-relaxed text-secondary-500 capitalize">All your luggage in one place</h4>
-                <p className="text-lg leading-6 text-dark-500">
+                <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-extrabold leading-normal lg:leading-relaxed text-secondary-500 capitalize">All your luggage in one place</h4>
+                <p className="sm:text-[1rem] md:text-lg leading-6 text-dark-500">
                     All your belongings remain intact from pick up to drop off
                 </p>
                 <div className="flex items-center gap-x-5">
@@ -47,8 +47,8 @@ const Features = () => {
                 <Image src="/media/images/gallery/packing-boxes.png" alt="SwiftShift's worker unpacking boxes in an office space" height={403} width={737} className="rounded-xl" priority/>
             </div>
             <div className="flex flex-col gap-y-6 justify-center sm:justify-start items-center sm:items-start text-center sm:text-left pl-0 sm:pl-3 md:pl-5 pr-0 sm:pr-4 md:pr-8 lg:pr-16">
-                <h4 className="text-3xl lg:text-5xl font-extrabold leading-normal lg:leading-relaxed text-secondary-500 capitalize">Seamless Transitions</h4>
-                <p className="text-lg leading-6 text-dark-500">
+                <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-extrabold leading-normal lg:leading-relaxed text-secondary-500 capitalize">Seamless Transitions</h4>
+                <p className="sm:text-[1rem] md:text-lg leading-6 text-dark-500">
                     Enjoy a moving experience that prioritizes safety and convenience
                 </p>
                 <div className="flex items-center gap-x-5">
