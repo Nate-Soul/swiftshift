@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
   return (
     <section className="py-16 relative">
         <div className="container">
-            <SectionHeading title="Why Choose Us" subtext="One Seamless Packing Solution" headerStyles="mb-16 text-center"  />
+            <SectionHeading title="Why Choose Us" subtext="One Seamless Packing Solution" headerStyles="mb-16 text-center" fancySubtext={null} />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {
                     solutions && solutions.map((solution, solutionIndex) => (

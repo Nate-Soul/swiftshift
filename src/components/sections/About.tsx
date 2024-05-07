@@ -7,7 +7,7 @@ const AboutSection = () => {
   return (
     <section className="pt-10 relative">
       <div className="container">
-        <SectionHeading title="About Us" subtext={null} headerStyles="text-center md:text-left mb-6 md:mb-8" />
+        <SectionHeading title="About Us" subtext={null} headerStyles="text-center md:text-left mb-6 md:mb-8" fancySubtext={null} />
         <div className="flex flex-wrap md:flex-nowrap gap-10">
             <div className="about-text basis-full md:basis-2/5 flex flex-col gap-y-5 text-center md:text-left">
                 <p>

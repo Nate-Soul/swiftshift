@@ -32,7 +32,7 @@ const HowItWorks = () => {
       <div className="h-[858.3px] w-[278px] bg-dark-300 -z-10 absolute left-[5%] top-[216px] rotate-[19.76deg] rounded-b-2xl rounded-t-full hidden xl:block"></div>
       <div className="h-[776.1px] w-[278px] bg-light-300 -z-10 absolute left-[10%] top-[385.39px] rotate-[32.79deg] rounded-full rounded-tl-none hidden xl:block"></div>
       <div className="container relative">
-        <SectionHeading title="How it Works" subtext="Book a move in three simple steps" headerStyles="text-center mb-16" />
+        <SectionHeading title="How it Works" subtext="Book a move in three simple steps" headerStyles="text-center mb-16" fancySubtext={null} />
         <div className="ml-auto w-full md:w-4/5 lg:w-3/5 flex flex-col gap-y-10 z-20">
             <div className="border border-light-300 rounded-xl py-8 flex items-center gap-8">
               <div className="bg-dark-300 text-white rounded-tr-[80px] inline-flex justify-center items-center h-[53px] w-[61px] sm:h-[93px] sm:w-[122px]">
