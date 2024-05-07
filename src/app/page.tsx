@@ -3,6 +3,7 @@ import Features from "@/components/sections/Features";
 import HowItWorks from "@/components/sections/HowItWorks";
 import ServicesSection from "@/components/sections/Services";
 import AboutSection from "@/components/sections/About";
+import WhyChooseUs from "@/components/sections/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
     <HowItWorks/>
     <ServicesSection/>
     <AboutSection/>
+    <WhyChooseUs/>
     </>
   );
 }
