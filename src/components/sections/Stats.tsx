@@ -26,18 +26,14 @@ const Stats = () => {
     ];
 
   return (
-    <div className="pt-32 bg-white">
-        <div className="bg-primary-500 text-white w-full">
-            <div className="container grid grid-cols-4 gap-8 py-8">
-                {
-                    stats && stats.map((stat, statIndex) => (
-                        <div className="flex flex-col gap-y-2 text-center" key={statIndex}>
-                            <h6 className="text-2xl font-black">{stat.number}</h6>
-                            <p className="text-lg">{stat.title}</p>
-                        </div>        
-                    ))
-                }
-            </div>
+    <div className="py-8 bg-primary-500 text-white">
+        <div className="container grid grid-cols-4">
+        {stats && stats.map((stat, statIndex) => (
+            <div className="flex flex-col gap-y-2 text-center" key={statIndex}>
+                <h6 className="text-2xl font-black">{stat.number}</h6>
+                <p className="text-lg">{stat.title}</p>
+            </div>        
+        ))}
         </div>
     </div>
   )

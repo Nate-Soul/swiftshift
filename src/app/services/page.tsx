@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
 
-import GenericHero from "@/components/sections/GenericHero"
-import ServicesPage from "@/components/sections/ServicesPage"
-import Stats from "@/components/sections/Stats"
+import GenericHero from "@/components/sections/GenericHero";
+import ServicesPage from "@/components/sections/ServicesPage";
+import ServicePageIntro from "@/components/sections/ServicePageIntro";
+import Stats from "@/components/sections/Stats";
+import ServiceFeature from "@/components/sections/ServiceFeature";
 
 export const metadata: Metadata = {
   title: "Our Services",
@@ -13,8 +15,10 @@ const page = () => {
   return (
     <>
       <GenericHero/>
+      <ServicePageIntro/>
       <Stats/>
       <ServicesPage/>
+      <ServiceFeature/>
     </>
   )
 }
