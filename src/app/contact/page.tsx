@@ -1,8 +1,13 @@
+import GenericHero from "@/components/sections/GenericHero";
+import AboutPage from "@/components/sections/AboutPage";
 
 
 const page = () => {
   return (
-    <h1 className="text-center">Contact Us</h1>
+    <>
+    <GenericHero pageTitle="Talk to Us" pageSubtitle={null} />
+    <AboutPage/>
+    </>
   )
 }
 

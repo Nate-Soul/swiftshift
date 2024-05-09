@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-      <GenericHero/>
+      <GenericHero pageTitle="Our Services" pageSubtitle="What We Offer" />
       <ServicePageIntro/>
       <Stats/>
       <ServicesPage/>
