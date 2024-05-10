@@ -1,12 +1,12 @@
 import GenericHero from "@/components/sections/GenericHero";
-import AboutPage from "@/components/sections/AboutPage";
+import ContactPage from "@/components/sections/ContactPage";
 
 
 const page = () => {
   return (
     <>
     <GenericHero pageTitle="Talk to Us" pageSubtitle={null} />
-    <AboutPage/>
+    <ContactPage/>
     </>
   )
 }
