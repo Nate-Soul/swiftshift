@@ -27,7 +27,7 @@ const Stats = () => {
 
   return (
     <div className="py-8 bg-primary-500 text-white">
-        <div className="container grid grid-cols-4">
+        <div className="container grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-0">
         {stats && stats.map((stat, statIndex) => (
             <div className="flex flex-col gap-y-2 text-center" key={statIndex}>
                 <h6 className="text-2xl font-black">{stat.number}</h6>

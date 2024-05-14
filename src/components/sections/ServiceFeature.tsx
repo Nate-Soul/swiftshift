@@ -11,8 +11,8 @@ const ServiceFeature = () => {
             </div>
             <div className="relative basis-full lg:basis-1/2">
                 <Image src="/media/images/gallery/residential-moves.jpg" alt="" className="w-full h-full object-cover" height={800} width={800} />
-                <div className="absolute bg-white w-5 top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
-                <div className="absolute -left-10 top-10 p-2 bg-white text-dark-500 w-44 shadow-custom-sm rounded-[1.25rem]">
+                <div className="absolute bg-white w-0 sm:w-5 top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
+                <div className="absolute left-0 md:-left-10 top-0 md:top-10 p-2 bg-white text-dark-500 w-44 shadow-custom-sm rounded-[1.25rem]">
                     <p>
                         Over <strong>10,000+</strong> customer relations. <br /><br /> <strong>93%</strong> job success base on client feedbacks
                     </p>
