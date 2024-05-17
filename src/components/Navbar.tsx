@@ -54,28 +54,28 @@ const Navbar = () => {
               }`}
               onClick={() => setServiceOpen((prev) =>!prev)}
             >
-              Services <span className="bi-chevron-down"></span>
+              Services {servicePaneOpen ? <span className="bi-chevron-up"></span> : <span className="bi-chevron-down"></span> }
             </Link>
             {servicePaneOpen && ( <ul className="absolute left-0 z-50 bg-dark-500 p-3 rounded-b-[0.625rem] w-max flex flex-col gap-y-2">
-              <li className="flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-500 border-b-primary-300">
+              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 border-b border-primary-300 p-2">
                 Individual family & office move
               </li>
-              <li className="inline-flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-50 0 border-b-primary-300 py-3 px-3">
+              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 border-b border-b-primary-400 p-2">
                 Local & Interstate Move
               </li>
-              <li className="inline-flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-50 0 border-b-primary-300 py-3 px-3">
+              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 border-b border-b-primary-400 p-2">
                 Comprehensive Packing solutions
               </li>
-              <li className="inline-flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-50 0 border-b-primary-300 py-3 px-3">
+              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 border-b border-b-primary-400 p-2">
               Tailored Relocation Planning
               </li>
-              <li className="inline-flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-50 0 border-b-primary-300 py-3 px-3">
+              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 border-b border-b-primary-400 p-2">
               Clear labeling and item Tracking Service
               </li>
-              <li className="inline-flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-50 0 border-b-primary-300 py-3 px-3">
+              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 border-b border-b-primary-400 p-2">
               Cleaning Services
               </li>
-              <li className="inline-flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-50 0 border-b-primary-300 py-3 px-3">
+              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 p-2">
               Post-Move Support and Setup Assistance
               </li>
             </ul>)}
