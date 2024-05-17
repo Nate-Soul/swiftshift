@@ -3,16 +3,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const Navbar = () => {
   const currentUrl = usePathname();
+
+  const [servicePaneOpen, setServiceOpen] = useState(false);
 
   return (
     <nav className="py-4">
       <div className="container flex items-center justify-between">
         <div className="flex items-center gap-x-4">
-          <button className="inline-flex md:hidden text-lg text-black">
-            <span className="bi-list"></span>
+          <button className="inline-flex flex-col gap-y-1 md:hidden text-lg text-black">
+            <span className="w-5 h-[2px] bg-dark-500"></span>
+            <span className="w-5 h-[2px] bg-dark-500"></span>
+            <span className="w-3 h-[2px] bg-dark-500"></span>
           </button>
           <Link href="/" className="inline-flex items-center gap-x-2 sm:gap-x-3">
             <Image
@@ -39,7 +44,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li>
+          <li className="relative">
             <Link
               href="/services"
               className={`${
@@ -47,9 +52,33 @@ const Navbar = () => {
                   ? "text-primary-500 hover:text-dark-300 font-semibold"
                   : "hover:text-primary-500"
               }`}
+              onClick={() => setServiceOpen((prev) =>!prev)}
             >
               Services <span className="bi-chevron-down"></span>
             </Link>
+            {servicePaneOpen && ( <ul className="absolute left-0 z-50 bg-dark-500 p-3 rounded-b-[0.625rem] w-max flex flex-col gap-y-2">
+              <li className="flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-500 border-b-primary-300">
+                Individual family & office move
+              </li>
+              <li className="inline-flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-50 0 border-b-primary-300 py-3 px-3">
+                Local & Interstate Move
+              </li>
+              <li className="inline-flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-50 0 border-b-primary-300 py-3 px-3">
+                Comprehensive Packing solutions
+              </li>
+              <li className="inline-flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-50 0 border-b-primary-300 py-3 px-3">
+              Tailored Relocation Planning
+              </li>
+              <li className="inline-flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-50 0 border-b-primary-300 py-3 px-3">
+              Clear labeling and item Tracking Service
+              </li>
+              <li className="inline-flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-50 0 border-b-primary-300 py-3 px-3">
+              Cleaning Services
+              </li>
+              <li className="inline-flex gap-x-3 before:w-px before:h-4 items-start before:bg-primary-50 0 border-b-primary-300 py-3 px-3">
+              Post-Move Support and Setup Assistance
+              </li>
+            </ul>)}
           </li>
           <li>
             <Link
