@@ -1,9 +1,12 @@
 "use client";
 
+import { useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+
+import services from "@/data/servicesList.json";
 
 const Navbar = () => {
   const currentUrl = usePathname();
@@ -45,39 +48,37 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="relative">
-            <Link
-              href="/services"
+            <button
+              id="servicesMainMenuDropdown"
+              onClick={() => setServiceOpen(prev => !prev)}
               className={`${
                 currentUrl === "/services"
                   ? "text-primary-500 hover:text-dark-300 font-semibold"
                   : "hover:text-primary-500"
-              }`}
-              onClick={() => setServiceOpen((prev) =>!prev)}
+              } inline-flex items-center gap-x-1`}
+              aria-haspopup="true"
+              aria-expanded={servicePaneOpen}
             >
-              Services {servicePaneOpen ? <span className="bi-chevron-up"></span> : <span className="bi-chevron-down"></span> }
-            </Link>
-            {servicePaneOpen && ( <ul className="absolute left-0 z-50 bg-dark-500 p-3 rounded-b-[0.625rem] w-max flex flex-col gap-y-2">
-              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 border-b border-primary-300 p-2">
-                Individual family & office move
+              Services
+              {/* {servicePaneOpen ? <span className="bi-chevron-up"></span> : <span className="bi-chevron-down"></span> } */}
+              <span 
+                className={`bi-chevron-${servicePaneOpen ? 'up' : 'down'}`}
+              >
+              </span>
+            </button>
+            {servicePaneOpen && ( 
+            <ul 
+              className="absolute left-0 z-50 bg-black bg-opacity-95 p-3 rounded-b-[0.625rem] w-max flex flex-col gap-y-2"
+              aria-labelledby="servicesMainMenuDropdown"
+            >
+            {services?.map((service, serviceIndex) => (
+              <li 
+                key={serviceIndex} 
+                className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 border-b border-primary-400 p-2 last:border-b-0"
+              >
+                <Link href="/services" className="text-light-200 hover:text-light-50">{service.title}</Link>          
               </li>
-              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 border-b border-b-primary-400 p-2">
-                Local & Interstate Move
-              </li>
-              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 border-b border-b-primary-400 p-2">
-                Comprehensive Packing solutions
-              </li>
-              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 border-b border-b-primary-400 p-2">
-              Tailored Relocation Planning
-              </li>
-              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 border-b border-b-primary-400 p-2">
-              Clear labeling and item Tracking Service
-              </li>
-              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 border-b border-b-primary-400 p-2">
-              Cleaning Services
-              </li>
-              <li className="flex gap-x-2 before:w-px before:h-4 items-start before:bg-primary-500 p-2">
-              Post-Move Support and Setup Assistance
-              </li>
+            ))}
             </ul>)}
           </li>
           <li>

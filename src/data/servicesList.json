@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Individual, Family & Office Move",
+        "description": "This service involves assisting individuals, families, and businesses with their relocation needs. For individuals and families, it includes household items such as furniture, appliances, and personal belongings. For offices, it involves relocating office furniture, equipment, files, and other assets. The service is tailored to meet the specific needs of each client, ensuring a smooth and stress-free transition to their new premises.",
+        "imageUrl": "/media/images/services/knowledge-and-tools.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Local & Interstate Move",
+        "description": "Local moves involve relocating within the same city or nearby area, while interstate moves involve relocating across state lines. Both services include all aspects of the moving process, from packing and loading to transportation and unloading. Local moves typically have shorter distances and may be completed within a day, while interstate moves require more extensive planning and may involve longer travel times.",
+        "imageUrl": "/media/images/services/good-moving-company.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Comprehensive Packing solutions",
+        "description": "Our expert team meticulously packs your belongings with utmost care and attention to detail, ensuring everything arrives at your new destination safely and securely. Whether it's fragile items, bulky furniture, or sensitive equipment, we handle it all with precision and professionalism, giving you peace of mind during your relocation process.",
+        "imageUrl": "/media/images/services/preparing-your-move.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Tailored Relocation Planning",
+        "description": "We understand that every move is unique, which is why we offer personalized relocation planning services tailored to your specific needs. From coordinating logistics to scheduling timelines, our dedicated specialists work closely with you to create a customized relocation plan that meets your requirements, budget, and timeline, ensuring a smooth transition to your new location.",
+        "imageUrl": "/media/images/services/planning-your-move.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Clear labeling and item Tracking Service",
+        "description": "Our Clear Labeling and Item Tracking service is designed to provide maximum transparency and accountability throughout the packing and relocation process. We understand the importance of keeping track of your belongings, and our comprehensive system ensures that each item is clearly labeled and tracked from start to finish.",
+        "imageUrl": "/media/images/services/movers-in-dubai.png"
+    },
+    {
+        "id": 6,
+        "title": "Cleaning Services",
+        "description": "This service entails professional cleaning of residential and commercial properties. It includes a range of cleaning tasks such as dusting, vacuuming, mopping, sanitizing surfaces, cleaning bathrooms, kitchens, and common areas. For residential properties, cleaning services may be scheduled on a one-time basis or as part of a regular cleaning routine. For commercial properties, cleaning services may be tailored to suit the specific needs of the business.",
+        "imageUrl": "/media/images/services/man-doing-professional-work.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Post-Move Support and Setup Assistance",
+        "description": "Our services don't end once your belongings reach their destination. We offer comprehensive post-move support and setup assistance to help you settle into your new space seamlessly. Whether it's unpacking boxes, assembling furniture, or arranging items according to your preferences, our team is here to assist you every step of the way, ensuring a hassle-free transition and allowing you to focus on getting comfortable in your new surroundings.",
+        "imageUrl": "/media/images/services/handling-larger-items.jpg"
+    }
+]

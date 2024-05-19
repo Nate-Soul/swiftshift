@@ -1,34 +1,9 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
+
+import services from "@/data/services.json";
 
 const ServicesSection = () => {
-
-    const services = [
-        {
-            id: 1,
-            title: "Comprehensive Packing Solutions",
-            description: "Our expert team meticulously packs your belongings with utmost care and attention to detail, ensuring everything arrives at your new destination safely and securely. Whether it's fragile items, bulky furniture, or sensitive equipment....",
-            imageUrl: "/media/images/services/moving-in-the-rain-to-reduce-damage.jpg",
-        },
-        {
-            id: 2,
-            title: "Tailored Relocation Planning",
-            description: "We understand that every move is unique, which is why we offer personalized relocation planning services tailored to your specific needs. From coordinating logistics to scheduling timelines....",
-            imageUrl: "/media/images/services/office-moving-in-plano-tx.jpg",
-        },
-        {
-            id: 3,
-            title: "Clear Labeling and Item Tracking Service",
-            description: "Our Clear Labeling and Item Tracking service is designed to provide maximum transparency and accountability throughout the packing and relocation process. We understand the importance of keeping track of your belongings.....",
-            imageUrl: "/media/images/services/havoc-on-your-move.jpg",
-        },
-        {
-            id: 4,
-            title: "Post-Move Support and Setup Assistance",
-            description: "Our services don't end once your belongings reach their destination. We offer comprehensive post-move support and setup assistance to help you settle into your new space seamlessly.....",
-            imageUrl: "/media/images/services/the-future-of-moving.jpg",
-        },
-    ]
 
   return (
     <section className="py-16 text-white relative bg-[url(/media/images/gallery/guilherme-almeida.png)] bg-no-repeat bg-center bg-contain">
