@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import type { Metadata } from "next";
 
 import GenericHero from "@/components/sections/GenericHero";
 import ServicesPage from "@/components/sections/ServicesPage";

@@ -1,4 +1,5 @@
 // import Image from "next/image";
+import { URL } from "next/dist/compiled/@edge-runtime/primitives/url";
 import SectionHeading from "../subcomponents/SectionHeading";
 
 const FAQSection = () => {
@@ -19,17 +20,37 @@ const FAQSection = () => {
         </div>
         <div className="flex gap-10 flex-wrap lg:flex-nowrap">
           <div className="basis-full lg:basis-3/5">
-            <div className="flex py-4 items-center gap-x-6 sm:gap-x-10 md:gap-x-12 lg:gap-x-16">
-              <button className="uppercase text-sm md:text-lg lg:text-xl font-extrabold text-primary-500 after:block after:w-full after:h-[3px] after:mt-[2px] after:bg-primary-500 after:ml-3">Property</button>
-              <button className="uppercase text-sm md:text-lg lg:text-xl font-extrabold text-primary-500 opacity-60 hover:opacity-100">Movement</button>
-              <button className="uppercase text-sm md:text-lg lg:text-xl font-extrabold text-primary-500 opacity-60 hover:opacity-100">Payment</button>
+            <nav className="tabs">
+              <ul className="tabs-list flex py-4 items-center gap-x-6 sm:gap-x-10 md:gap-x-12 lg:gap-x-16">
+                <li>
+                  <button 
+                    id="tabLink1"
+                    aria-selected="true"
+                    aria-current="true"
+                    className="tabs-link uppercase text-sm md:text-lg lg:text-xl font-extrabold text-primary-500 after:block after:w-full after:h-[3px] after:mt-[2px] after:bg-primary-500 after:ml-3">Property</button>
+                </li>
+                <li>
+                  <button 
+                    id="tabLink2"
+                    aria-selected="false"
+                    className="tabs-link uppercase text-sm md:text-lg lg:text-xl font-extrabold text-primary-500 opacity-60 hover:opacity-100">Movement</button>
+                </li>
+                <li>
+                  <button 
+                    id="tabLink3"
+                    aria-selected="false"
+                    className="tabs-link uppercase text-sm md:text-lg lg:text-xl font-extrabold text-primary-500 opacity-60 hover:opacity-100">Payment</button>
+                </li>
+              </ul>
+            </nav>
+            <div className="tab-content">
+              <ul className="tab-panel flex flex-col gap-0 sm:text-lg md:text-xl text-dark-400" id="tabPanel1" aria-labelledby="tabLink1">
+                <li className="py-4 border-b">How do you ensure the safety of my belongings during the relocation process?</li>
+                <li className="py-4 border-b">Can I customize the labeling and tracking options for my specific needs?</li>
+                <li className="py-4 border-b">What happens if there is damage or loss to my property during the relocation process?</li>
+                <li className="py-4">How far in advance should I book your services for my upcoming relocation?</li>
+              </ul>
             </div>
-            <ul className="flex flex-col gap-0 sm:text-lg md:text-xl text-dark-400">
-              <li className="py-4 border-b">How do you ensure the safety of my belongings during the relocation process?</li>
-              <li className="py-4 border-b">Can I customize the labeling and tracking options for my specific needs?</li>
-              <li className="py-4 border-b">What happens if there is damage or loss to my property during the relocation process?</li>
-              <li className="py-4">How far in advance should I book your services for my upcoming relocation?</li>
-            </ul>
           </div>
           <div className="basis-full lg:basis-2/5 border border-primary-300 shadow-custom shadow-primary-400 rounded-[0.75rem] p-5 pt-8 pb-10">
             <hgroup className="mb-10">
