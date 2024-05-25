@@ -31,7 +31,8 @@ const config: Config = {
         "dark-300": "#8C7424",
         "dark-400": "#7C7B7B",
         "dark-500": "#504538",
-        "dark-600": "#484554"
+        "dark-600": "#484554",
+        "dark-700": "#24292E"
       },
       fontFamily: {
         alvenir: ['var(--font-alvenir)'],
@@ -45,6 +46,7 @@ const config: Config = {
         '60': '60',
         '70': '70',
         '80': '80',
+        '90': '90',
       },
     },
   },
