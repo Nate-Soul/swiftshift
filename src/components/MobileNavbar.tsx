@@ -39,7 +39,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ toggleFn, isOpenNav }) => {
 
   return (
     <nav id="mainMobileMenu" className="fixed top-0 left-0 right-0 bottom-0 z-90 bg-[#A9A5A1] bg-opacity-85">
-      <div className="w-3/5 h-full bg-white text-dark-700 pt-10 px-5 overflow-y-auto hide-scrollbar">
+      <div className="w-3/4 h-full bg-white text-dark-700 py-10 px-5 overflow-y-auto hide-scrollbar">
         <div className="flex items-center justify-between gap-x-3">
           <button onClick={toggleFn} aria-expanded={isOpenNav} aria-controls="mainMobileMenu" aria-label="Close Mobile Navigation">
             <span className="bi-x-lg"></span>
