@@ -46,13 +46,13 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ toggleFn, isOpenNav }) => {
             aria-expanded={isOpenNav} 
             aria-controls="mainMobileMenu" 
             aria-label="Close Mobile Navigation"
-            className="h-6 w-6 shadow-custom-sm font-extrabold"
+            className="h-6 w-6 inline-flex justify-center items-center shadow-custom-sm hover:shadow-primary-400 focus:shadow-primary-500"
         >
             <span className="bi-x-lg"></span>
           </button>
           <Logo />
         </div>
-        <div className="h-full flex flex-col justify-between gap-y-5">
+        <div className="h-full flex flex-col justify-between gap-y-8">
           <ul className="flex flex-col gap-y-8 mt-10">
             {mobileNavLinks?.map((navLink, navLinkIndex) => (
               <li key={navLinkIndex}>
