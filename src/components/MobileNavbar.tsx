@@ -33,6 +33,11 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ toggleFn, isOpenNav }) => {
       text: "Contact Us",
       icon: "bi-envelope",
     },
+    {
+      url: "/about#acquirePlatform",
+      text: "Purchase website",
+      icon: "bi-cash-stack",
+    },
   ];
 
   const currentUrl = usePathname();

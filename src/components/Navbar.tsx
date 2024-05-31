@@ -63,11 +63,8 @@ const Navbar = () => {
                 aria-expanded={servicePaneOpen}
               >
                 Services
-                {/* {servicePaneOpen ? <span className="bi-chevron-up"></span> : <span className="bi-chevron-down"></span> } */}
                 <span 
-                  className={`bi-chevron-${servicePaneOpen ? 'up' : 'down'}`}
-                >
-                </span>
+                  className={`bi-chevron-${servicePaneOpen ? 'up' : 'down'}`}></span>
               </button>
               {servicePaneOpen && ( 
               <ul 
@@ -110,10 +107,10 @@ const Navbar = () => {
             </li>
           </ul>
           <Link
-            href="/contact"
+            href="/about#acquirePlatform"
             className="btn btn-primary shadow-custom-sm h-[41px] sm:h-[50px] w-[103px] sm:w-[120px] lg:w-[148px] text-sm sm:text-lg"
           >
-            Get Quote
+            Buy Site
           </Link>
         </div>
       </nav>

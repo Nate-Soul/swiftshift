@@ -5,7 +5,7 @@ type contactFormProps = {
 
 const ContactForm = ( { title } : contactFormProps ) => {
   return (
-    <>  
+    <>
     <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-dark-500 font-black mb-10">{title}</h4>
     <form action="#" className="flex flex-col gap-y-4">
         <div className="form-group flex flex-col gap-y-2">
