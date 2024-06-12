@@ -59,7 +59,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-alvenir font-normal">
+      <body className={`${inter.variable} ${alvenir.variable} font-alvenir font-normal`}>
         <MainHeader/>
         <main>
           {children}

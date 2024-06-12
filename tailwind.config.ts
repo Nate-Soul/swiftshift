@@ -36,7 +36,7 @@ const config: Config = {
       },
       fontFamily: {
         alvenir: ['var(--font-alvenir)'],
-        bellefair: ['var(--font-inter)'],
+        inter: ['var(--font-inter)'],
       },
       boxShadow: {
         'custom-sm': '0 0.2px 4px 0 rgba(80, 69, 56, .20)',

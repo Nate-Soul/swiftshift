@@ -34,33 +34,33 @@ const HowItWorks = () => {
       <div className="container relative">
         <SectionHeading title="How it Works" subtext="Book a move in three simple steps" headerStyles="text-center mb-16" fancySubtext={null} />
         <div className="ml-auto w-full md:w-4/5 lg:w-3/5 flex flex-col gap-y-10 z-20">
-            <div className="border border-light-300 rounded-xl py-8 flex items-center gap-8">
-              <div className="bg-dark-300 text-white rounded-tr-[80px] inline-flex justify-center items-center h-[53px] w-[61px] sm:h-[93px] sm:w-[122px]">
+            <div className="border border-light-300 rounded-xl py-8 pr-2 sm:pr-4 grid grid-cols-12 gap-x-5 sm:gap-x-8">
+              <div className="bg-dark-300 text-white rounded-tr-[5rem] inline-flex justify-center items-center h-16 sm:h-24 w-full col-span-3">
                 <span className="font-georgia text-3xl md:text-4xl lg:text-6xl font-bold">01</span>
               </div>
-              <div className="before:bg-primary-500 before:w-1 before:h-16 flex items-center justify-evenly gap-x-8">
+              <div className="before:bg-primary-500 before:w-1 before:h-16 flex items-center gap-x-5 sm:gap-x-8 col-span-9">
                 <div className="flex flex-col gap-y-4">
                   <h4 className="sm:text-lg md:text-2xl font-extrabold">Select your address</h4>
                   <p className="text-sm sm:text-[1rem] md:text-xl">Select pick up and drop off location</p>
                 </div>
               </div>
             </div>
-            <div className="border border-light-300 rounded-xl py-8 flex items-center gap-8">
-              <div className="bg-light-300 text-white rounded-tr-[80px] inline-flex justify-center items-center h-[53px] w-[61px] sm:h-[93px] sm:w-[122px]">
+            <div className="border border-light-300 rounded-xl py-8 pr-2 sm:pr-4 grid grid-cols-12 gap-x-5 sm:gap-x-8">
+              <div className="bg-light-300 text-white rounded-tr-[5rem] inline-flex justify-center items-center h-16 sm:h-24 w-full col-span-3">
                 <span className="font-georgia text-3xl md:text-4xl lg:text-6xl font-bold">02</span>
               </div>
-              <div className="before:bg-primary-500 before:w-1 before:h-16 flex items-center justify-evenly gap-x-8">
+              <div className="before:bg-primary-500 before:w-1 before:h-16 flex items-center gap-x-5 sm:gap-x-8 col-span-9">
                 <div className="flex flex-col gap-y-4">
                   <h4 className="sm:text-lg md:text-2xl font-extrabold">Schedule a visit</h4>
                   <p className="text-sm sm:text-[1rem] md:text-xl">Select a convenient date for a visit to check your properties</p>
                 </div>
               </div>
             </div>
-            <div className="border border-light-300 rounded-xl py-8 flex items-center gap-8">
-              <div className="bg-primary-500 text-white rounded-tr-[80px] inline-flex justify-center items-center h-[53px] w-[61px] sm:h-[93px] sm:w-[122px]">
+            <div className="border border-light-300 rounded-xl py-8 pr-2 sm:pr-4 grid grid-cols-12 gap-x-5 sm:gap-x-8">
+              <div className="bg-primary-500 text-white rounded-tr-[5rem] inline-flex justify-center items-center h-16 sm:h-24 w-full col-span-3">
                 <span className="font-georgia text-3xl md:text-4xl lg:text-6xl font-bold">03</span>
               </div>
-              <div className="before:bg-primary-500 before:w-1 before:h-16 flex items-center justify-evenly gap-x-8">
+              <div className="before:bg-primary-500 before:w-1 before:h-16 flex items-center gap-x-5 sm:gap-x-8 col-span-9">
                 <div className="flex flex-col gap-y-4">
                   <h4 className="sm:text-lg md:text-2xl font-extrabold">Finalize your move</h4>
                   <p className="text-sm sm:text-[1rem] md:text-xl">Choose your moving date</p>

@@ -51,25 +51,34 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="relative">
-              <button
-                id="servicesMainMenuDropdown"
-                onClick={() => setServiceOpen(prev => !prev)}
+              <Link
+                href="/services"
                 className={`${
                   currentUrl === "/services"
                     ? "text-primary-500 hover:text-dark-300 font-semibold"
                     : "hover:text-primary-500"
-                } inline-flex items-center gap-x-1`}
+                }`}               
+                // className={`${
+                //   currentUrl === "/services"
+                //     ? "text-primary-500 hover:text-dark-300 font-semibold"
+                //     : "hover:text-primary-500"
+                // } `}
+              >
+                Services
+              </Link>
+              <button
+                id="servicesMainMenuDropdownToggler"
+                className="inline-flex items-center justify-center h-6 w-6 hover:text-primary-500"
+                onClick={() => setServiceOpen(prev => !prev)}
                 aria-haspopup="true"
                 aria-expanded={servicePaneOpen}
               >
-                Services
-                <span 
-                  className={`bi-chevron-${servicePaneOpen ? 'up' : 'down'}`}></span>
+                <span className={`bi-chevron-${servicePaneOpen ? 'up' : 'down'}`}></span>
               </button>
               {servicePaneOpen && ( 
               <ul 
                 className="absolute left-0 z-50 bg-black bg-opacity-95 p-3 rounded-b-[0.625rem] w-max flex flex-col gap-y-2"
-                aria-labelledby="servicesMainMenuDropdown"
+                aria-labelledby="servicesMainMenuDropdownToggler"
               >
               {services?.map((service, serviceIndex) => (
                 <li 
